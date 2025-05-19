@@ -1,0 +1,16 @@
+.app{
+    width: 100%;
+}
+.bottomBar{
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}

@@ -1,0 +1,18 @@
+@use '../../util/global.scss' as *;
+
+.mainConatiner{
+    @include layout(0%);
+    img{
+        width: 70%;
+    }
+    .head{
+        @include fontStyle(2.8rem, 700, 80%, center);
+      }
+      .random{
+        width: 75%;
+        font-family: sans-serif;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+}

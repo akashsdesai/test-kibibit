@@ -1,0 +1,104 @@
+@use '../../util/global.scss' as *;
+
+.mainConatiner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 94vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: start;
+    margin: 3rem 0;
+    .locationContainer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        .find{
+            @include fontStyle(0.9rem, 400, 100%, start)
+        }
+        .location{
+            margin: 0.5rem 0 1rem 0;
+            @include fontStyle(1.2rem, 600, 100%, start)
+        }
+    }
+    .detailsConatiner{
+        width: 90%;
+        .hero{
+            margin-top: 2rem;
+            width: 100%;
+            border-radius: 1rem;
+        }
+        .details{
+            width: calc(100% - 1rem);
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0.5rem 0 0.5rem;
+            .names{
+                width: 65%;
+                .twrName{
+                    @include fontStyle(1.2rem, 700, 100%, start)
+                }
+                .addrs{
+                    margin-top: 0.25rem;
+                    @include fontStyle(0.8rem, 500, 100%, start)
+                }
+            }
+            .price{
+                @include fontStyle(1.2rem, 700, 100%, end);
+                .period{
+                    @include fontStyle(0.8rem, 500, 100%, start)
+                }
+            }
+        }
+    }
+    .list{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .ListHead{
+            margin-bottom: 1.5rem;
+            width: calc(100% - 1rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .listHeadName{
+                @include fontStyle(1.2rem, 700, 100%, start)
+            }
+            .listAll{
+                @include fontStyle(0.8rem, 500, 100%, end);
+                color: #BF77F6;
+            }
+        }
+        .ListContetnt{
+            margin-bottom: 1.5rem;
+            width: calc(100% - 1rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .listImg{
+                width: 3rem;
+                height: 2.5rem;
+                background-color: #BF77F6;
+                border-radius: 0.5rem;
+            }
+            .singleListDetails{
+                width: 60%;
+                .detailName{
+                    @include fontStyle(1rem, 600, 60%, start);
+                }
+                .detailDate{
+                    @include fontStyle(0.8rem, 500, 100%, start);
+                }
+            }
+            .listPrice{
+                width: 20%;
+                @include fontStyle(1.2rem, 600, 20%, end);
+            }
+        }
+    }
+}

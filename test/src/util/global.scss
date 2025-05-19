@@ -1,0 +1,20 @@
+@mixin layout ($margin){
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - $margin);
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+
+  @mixin fontStyle($size, $weight, $width, $align){
+        text-align: $align;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: $width;
+        font-family: sans-serif;
+        font-size: $size;
+        font-weight: $weight;
+        line-height: normal;
+  }
