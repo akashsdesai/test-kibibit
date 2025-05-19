@@ -13,7 +13,7 @@ import { MdOutlineVerifiedUser } from "react-icons/md";
 function App() {
   const location = useLocation();
   const [show, setShow] = useState(false);
-  const [current, setCurrent]=useState("/")
+  const [current, setCurrent]=useState("/home")
   useEffect(() => {
     setShow(location.pathname !== '/');
     

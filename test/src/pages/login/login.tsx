@@ -9,16 +9,17 @@ function Login() {
   return (
     <div className={styles.mainConatiner}>
         <img src={loginImage}/>
-        <p className={styles.head}>Choose a place for your work</p>
+        <p className={styles.head}>Choose a<br/>place for your<br/>work</p>
         <p className={styles.random}>lorem ipsum dolor</p>
         <Link to="/home">
         <ColorButton
             textColor="white"
             bgColor="#BF77F6"
             fontSize="1rem"
-            padding="0.3rem 1.5rem"
+            padding="0.8rem 2rem"
             sx={{
                 textTransform: 'none',
+                borderRadius:"12px"
             }}
         >
             Get Started
